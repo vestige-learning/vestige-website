@@ -1,117 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Study AI Explainer</title>
-<style>
-body{font-family:Arial;background:#eef2f7;margin:0}
-header{background:#1d4ed8;color:white;padding:15px;text-align:center}
-nav{background:#111;padding:10px;text-align:center}
-nav button{margin:5px;padding:10px 15px;border:none;
-background:#2563eb;color:white;border-radius:5px;cursor:pointer}
-.section{display:none;padding:20px}
-.box{background:white;padding:15px;border-radius:10px;margin-bottom:15px}
-input{padding:10px;width:90%;margin:5px 0}
-.answer{margin-top:10px;color:#065f46;line-height:1.6}
-footer{background:#111;color:white;text-align:center;padding:10px}
-</style>
+    <meta charset="UTF-8">
+    <title>Vestige Learning Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f8;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0a7c3b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #055c2b;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            background: white;
+            margin: 15px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #0a7c3b;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .contact-box {
+            background: #eef6f1;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #0a7c3b;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #066b33;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-<h1>📚 Study AI Explainer</h1>
-<p>Ask any subject question • Get clear AI-style explanation</p>
+    <h1>Vestige Learning Platform</h1>
+    <p>Knowledge • Learning • Growth</p>
 </header>
 
 <nav>
-<button onclick="show('login')">Login</button>
-<button onclick="show('ask')">Ask Any Question</button>
-<button onclick="show('subjects')">Subjects</button>
+    <a href="#home">Home</a>
+    <a href="#about">About Vestige</a>
+    <a href="#products">Products</a>
+    <a href="#business">Business Plan</a>
+    <a href="#join">Join My Team</a>
+    <a href="#disclaimer">Disclaimer</a>
 </nav>
 
-<!-- LOGIN -->
-<div id="login" class="section">
-<h2>🔐 Login</h2>
-<div class="box">
-<input id="user" placeholder="Username">
-<input id="pass" type="password" placeholder="Password">
-<button onclick="login()">Login</button>
-<p id="msg"></p>
-</div>
-</div>
+<section id="home">
+    <h2>Welcome</h2>
+    <p>
+        Welcome to my Vestige learning website.  
+        This platform is created to share clear and honest information about
+        Vestige products and business opportunity.
+    </p>
+    <p>
+        My goal is to help people understand Vestige properly before taking
+        any decision.
+    </p>
+</section>
 
-<!-- ASK QUESTION -->
-<div id="ask" class="section">
-<h2>🤖 Ask Any Question</h2>
-<div class="box">
-<input id="q" placeholder="Type your question here...">
-<button onclick="answer()">Ask</button>
-<div id="aiAnswer" class="answer"></div>
-</div>
-</div>
+<section id="about">
+    <h2>About Vestige</h2>
+    <p>
+        Vestige is a direct selling company that focuses on
+        wellness, nutrition, personal care and home care products.
+    </p>
+    <ul>
+        <li>Product-based business model</li>
+        <li>No guaranteed income</li>
+        <li>Growth depends on effort and learning</li>
+        <li>Legal direct selling concept</li>
+    </ul>
+</section>
 
-<!-- SUBJECT LIST -->
-<div id="subjects" class="section">
-<h2>📘 Subjects Covered</h2>
-<div class="box">🧮 Mathematics</div>
-<div class="box">⚛ Physics</div>
-<div class="box">🧬 Biology</div>
-<div class="box">🧪 Chemistry</div>
-<div class="box">🌍 Geography</div>
-<div class="box">💻 Computer</div>
-<div class="box">🏛 History</div>
-<div class="box">⚖ Civics</div>
-<div class="box">📖 English</div>
-</div>
+<section id="products">
+    <h2>Products & Services</h2>
+    <ul>
+        <li><b>Wellness Products:</b> Support healthy lifestyle</li>
+        <li><b>Nutrition:</b> Daily nutritional support</li>
+        <li><b>Personal Care:</b> Hygiene and self-care products</li>
+        <li><b>Home Care:</b> Daily household use products</li>
+    </ul>
+    <p>
+        Note: These products are not medicines. Results may vary.
+    </p>
+</section>
+
+<section id="business">
+    <h2>Business Explanation</h2>
+    <p>
+        Vestige business works through product usage, sharing,
+        learning and teamwork.
+    </p>
+    <ul>
+        <li>No fixed salary</li>
+        <li>No quick money</li>
+        <li>Income depends on consistency</li>
+        <li>Focus on skill development</li>
+    </ul>
+</section>
+
+<section id="join">
+    <h2>Join My Team</h2>
+    <div class="contact-box">
+        <p>
+            If you want to understand Vestige in detail, you can contact me.
+            No payments are taken from this website.
+        </p>
+
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Your Name">
+
+            <label>Mobile Number</label>
+            <input type="text" placeholder="Your Mobile Number">
+
+            <label>Email</label>
+            <input type="email" placeholder="Your Email">
+
+            <label>City</label>
+            <input type="text" placeholder="Your City">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+<section id="disclaimer">
+    <h2>Disclaimer</h2>
+    <p>
+        This website is not the official Vestige website.
+        All information provided here is for educational purposes only.
+    </p>
+    <p>
+        Income is not guaranteed and depends on individual effort,
+        learning and consistency.
+    </p>
+</section>
 
 <footer>
-© 2025 Study AI Explainer | Learn Clearly 📘
+    <p>© 2025 Vestige Learning Platform</p>
 </footer>
 
-<script>
-function show(id){
-document.querySelectorAll(".section").forEach(s=>s.style.display="none");
-document.getElementById(id).style.display="block";
-}
-
-function login(){
-let u=document.getElementById("user").value;
-let p=document.getElementById("pass").value;
-document.getElementById("msg").innerText=
-(u&&p)?"Login Successful ✅":"Please enter username & password ❌";
-}
-
-function answer(){
-let q=document.getElementById("q").value.toLowerCase();
-let a="Sorry, I could not understand the question. Please try again.";
-
-if(q.includes("area of rectangle"))
-a="To find the area of a rectangle, multiply its length and breadth. This tells how much surface the rectangle covers.";
-
-else if(q.includes("newton"))
-a="Newton’s laws explain motion. The first law says an object stays at rest or moves uniformly unless an external force acts on it.";
-
-else if(q.includes("photosynthesis"))
-a="Photosynthesis is the process by which green plants make food using sunlight, water and carbon dioxide. This food provides energy.";
-
-else if(q.includes("atom"))
-a="An atom is the smallest unit of matter. It has protons, neutrons in the nucleus and electrons revolving around it.";
-
-else if(q.includes("latitude"))
-a="Latitudes are imaginary lines that run parallel to the equator and help locate places on Earth.";
-
-else if(q.includes("computer"))
-a="A computer is an electronic device that takes input, processes data and gives output. It helps in fast calculations.";
-
-else if(q.includes("democracy"))
-a="Democracy is a form of government where people elect their leaders by voting.";
-
-else if(q.includes("past tense"))
-a="Past tense shows an action that already happened. Example: go → went.";
-
-document.getElementById("aiAnswer").innerText=a;
-}
-</script>
-
 </body>
-</html>
+  </html>
